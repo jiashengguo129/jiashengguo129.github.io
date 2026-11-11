@@ -40,7 +40,7 @@ body {
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
-.page { max-width: 42rem; margin: 0 auto; display: flex; flex-direction: column; gap: 2.25rem; }
+.page { max-width: 54rem; margin: 0 auto; display: flex; flex-direction: column; gap: 2.25rem; }
 a { color: var(--link); text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
 a:hover { text-decoration-thickness: 2px; }
 a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
@@ -93,8 +93,7 @@ footer { border-top: 1px solid var(--hair); padding-top: 0.9rem; color: var(--mu
 <main class="page">
 
   <header class="intro">
-    <!-- PHOTO: replace the line inside .photo with  <img src="photo.jpg" alt="Jiasheng Guo">  -->
-    <div class="photo" role="img" aria-label="Photo placeholder">JG</div>
+    <div class="photo"><img src="photo.jpg" alt="Jiasheng Guo" width="512" height="512"></div>
     <div class="who">
       <h1>Jiasheng Guo</h1>
       <p class="role">Undergraduate, Computer Science and Applied Mathematics<br>University of California, Santa Barbara</p>
@@ -135,8 +134,8 @@ footer { border-top: 1px solid var(--hair); padding-top: 0.9rem; color: var(--mu
         <span class="pub-venue">CVPR 2026 Workshop on Generative AI for Storytelling (AISTORY)</span>
         <div class="pub-links">
           <a href="https://arxiv.org/abs/2604.03448">Paper</a>
+          <a href="https://huggingface.co/datasets/JiashengGuo/ExpressEdit">Dataset</a>
           <!-- TODO: add when you have the URLs
-          <a href="DATASET_URL">Dataset</a>
           <a href="DEMO_URL">Demo</a>
           <a href="PROJECT_PAGE_URL">Project page</a>
           -->
