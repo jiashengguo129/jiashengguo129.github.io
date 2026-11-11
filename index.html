@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jiasheng Guo</title>
+<meta name="description" content="Jiasheng Guo is an undergraduate at UC Santa Barbara working on LLM agents, RL post-training, and generative models in the Qin Lab.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+/* Layout: one narrow reading column, set like the CV it sits beside: Garamond, bold caps headings over a full rule. */
+:root {
+  --bg: #ffffff;
+  --fg: #1b1d22;
+  --muted: #5d6470;
+  --rule: #1b1d22;
+  --hair: #d9dce2;
+  --link: #0b5cad;
+  --ph-bg: #eef1f5;
+  --font: "EB Garamond", Garamond, "Adobe Garamond Pro", "Times New Roman", serif;
+  --step-0: 1.1875rem;
+  --step-1: 1.0625rem;
+  --step-2: 2rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171c; --fg: #e7e8ec; --muted: #a0a6b2; --rule: #e7e8ec;
+    --hair: #343943; --link: #8ab8f0; --ph-bg: #22262e; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171c; --fg: #e7e8ec; --muted: #a0a6b2; --rule: #e7e8ec;
+  --hair: #343943; --link: #8ab8f0; --ph-bg: #22262e; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font); font-size: var(--step-0); line-height: 1.5;
+  font-variant-numeric: lining-nums;
+  padding-block: 3.5rem 3rem;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.page { max-width: 42rem; margin: 0 auto; display: flex; flex-direction: column; gap: 2.25rem; }
+a { color: var(--link); text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+p { margin: 0; }
+
+/* Header */
+.intro { display: flex; gap: 1.75rem; align-items: center; flex-wrap: wrap; }
+.photo {
+  width: 8.5rem; max-width: 100%; aspect-ratio: 1; flex: none;
+  background: var(--ph-bg); border: 1px solid var(--hair); border-radius: 50%;
+  display: grid; place-items: center; color: var(--muted);
+  font-size: 2rem; letter-spacing: 0.04em;
+}
+.photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.who { flex: 1 1 16rem; min-width: 0; display: flex; flex-direction: column; gap: 0.35rem; }
+h1 { margin: 0; font-size: var(--step-2); font-weight: 700; line-height: 1.15; text-wrap: balance; }
+.role { color: var(--muted); }
+.contact { display: flex; flex-wrap: wrap; gap: 0.15rem 0.6rem; font-size: var(--step-1); }
+.contact span[aria-hidden] { color: var(--muted); }
+.email { user-select: all; }
+
+/* Sections */
+section { display: flex; flex-direction: column; gap: 0.7rem; }
+h2 {
+  margin: 0; font-size: 1rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  border-bottom: 1px solid var(--rule); padding-bottom: 0.1rem;
+}
+.stack { display: flex; flex-direction: column; gap: 0.75rem; }
+ul.plain { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.9rem; }
+.pub-title { font-style: italic; }
+.pub-venue, .me { font-weight: 600; }
+.pub-links { display: flex; flex-wrap: wrap; gap: 0 0.75rem; font-size: var(--step-1); }
+.note { color: var(--muted); font-size: var(--step-1); }
+
+/* News: date column + text */
+.news { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: 0.45rem 1rem; margin: 0; }
+.news dt { color: var(--muted); font-variant-numeric: lining-nums tabular-nums; }
+.news dd { margin: 0; min-width: 0; }
+@media (max-width: 26rem) {
+  .news { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .news dd { margin-bottom: 0.6rem; }
+}
+
+footer { border-top: 1px solid var(--hair); padding-top: 0.9rem; color: var(--muted); font-size: 1rem; }
+</style>
+<style>body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+
+<main class="page">
+
+  <header class="intro">
+    <!-- PHOTO: replace the line inside .photo with  <img src="photo.jpg" alt="Jiasheng Guo">  -->
+    <div class="photo" role="img" aria-label="Photo placeholder">JG</div>
+    <div class="who">
+      <h1>Jiasheng Guo</h1>
+      <p class="role">Undergraduate, Computer Science and Applied Mathematics<br>University of California, Santa Barbara</p>
+      <p class="contact">
+        <a class="email" href="mailto:jiashengguo@ucsb.edu">jiashengguo@ucsb.edu</a>
+        <span aria-hidden="true">·</span>
+        <a href="Jiasheng_Guo_CV.pdf">CV</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/jiashengguo129">GitHub</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.linkedin.com/in/jiasheng-guo-567558393/">LinkedIn</a>
+      </p>
+    </div>
+  </header>
+
+  <section aria-labelledby="about">
+    <h2 id="about">About</h2>
+    <div class="stack">
+      <p>I am a second-year undergraduate at UC Santa Barbara, where I work in the Qin Lab with Prof. Yao Qin. My research is on LLM agents: how the harness around a model shapes what it can do, and how to improve agents with RL post-training.</p>
+      <p>Before this I spent a year on diffusion-based image editing, which led to ExpressEdit, a Photoshop plugin for editing stylized facial expressions, presented at a CVPR 2026 workshop.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="research">
+    <h2 id="research">Research</h2>
+    <div class="stack">
+      <p><strong>LLM agents and world models.</strong> Since July 2026 I have been working on agents that act over long horizons and adapt to the person they are helping, trained and evaluated in simulation. I am also interested in using mechanistic simulators as world models that an LLM can reason over.</p>
+      <p><strong>Diffusion-based image editing.</strong> From September 2025 to August 2026 I worked on fast and controllable image editing with diffusion models, including multi-GPU parallel inference and biases that build up over repeated edits.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="pubs">
+    <h2 id="pubs">Publications</h2>
+    <ul class="plain">
+      <li>
+        <span class="pub-title">ExpressEdit: Fast Editing of Stylized Facial Expressions with Diffusion Models in Photoshop</span><br>
+        Kenan Tang, <span class="me">Jiasheng Guo</span>, Jeffrey Lin, Yao Qin<br>
+        <span class="pub-venue">CVPR 2026 Workshop on Generative AI for Storytelling (AISTORY)</span>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2604.03448">Paper</a>
+          <!-- TODO: add when you have the URLs
+          <a href="DATASET_URL">Dataset</a>
+          <a href="DEMO_URL">Demo</a>
+          <a href="PROJECT_PAGE_URL">Project page</a>
+          -->
+        </div>
+      </li>
+      <li>
+        <span class="pub-title">Analysis of the Principle and Two Applications for Monte-Carlo Simulations</span><br>
+        Minqi Cheng*, <span class="me">Jiasheng Guo*</span><br>
+        <span class="pub-venue">Highlights in Science, Engineering and Technology (IFMPT 2024)</span>
+        <div class="pub-links">
+          <a href="https://drpress.org/ojs/index.php/HSET/article/view/18782">Paper</a>
+        </div>
+      </li>
+    </ul>
+    <p class="note">* Equal contribution</p>
+  </section>
+
+  <section aria-labelledby="news">
+    <h2 id="news">News</h2>
+    <dl class="news">
+      <dt>Jul 2026</dt><dd>Started working on LLM agents and world models in the Qin Lab.</dd>
+      <dt>Jun 2026</dt><dd>Attended CVPR 2026 in Denver, where ExpressEdit was presented at the AISTORY workshop.</dd>
+      <dt>Apr 2026</dt><dd>ExpressEdit was accepted to the CVPR 2026 AISTORY workshop.</dd>
+      <dt>Sep 2025</dt><dd>Joined the Qin Lab at UC Santa Barbara.</dd>
+    </dl>
+  </section>
+
+  <footer>Last updated November 2026</footer>
+
+</main>
+</body>
+</html>
